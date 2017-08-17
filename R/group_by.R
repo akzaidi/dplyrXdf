@@ -4,7 +4,7 @@ NULL
 
 #' @exportClass grouped_tbl_xdf
 #' @export grouped_tbl_xdf
-grouped_tbl_xdf <- setClass("grouped_tbl_xdf", contains="tbl_xdf", slots=c(groups="characterORNULL"))
+grouped_tbl_xdf <- setClass("grouped_tbl_xdf", contains=c("tbl_xdf", "RxXdfData"), slots=c(groups="characterORNULL"))
 
 
 #' Group an Xdf file by one or more variables
